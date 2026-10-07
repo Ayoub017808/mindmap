@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Tajawal', sans-serif;
+    direction: rtl;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Cairo', sans-serif;
+  }
+
+  .font-mono-nums {
+    font-family: 'IBM Plex Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.canvas-grid-bg {
+  background-color: #F8FAFC;
+  background-image: radial-gradient(#CBD5E1 1.25px, transparent 1.25px);
+  background-size: 24px 24px;
+}
+
+.canvas-grid-dark {
+  background-color: #0F172A;
+  background-image: radial-gradient(#334155 1.25px, transparent 1.25px);
+  background-size: 24px 24px;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
+
